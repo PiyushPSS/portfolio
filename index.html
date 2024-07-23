@@ -16,11 +16,15 @@
             content-visibility: auto;
           }
         }
-      </style>
+  </style>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden">
-
+<body class="overflow-x-hidden font-Outfit">
 
 
   <!-- _________________________________________________________________ -->
@@ -39,6 +43,7 @@
       <li><a href="#about">About Me</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#work">My Work</a></li>
+      <!-- TODO: Change to github -->
       <li><a href="#contact">Contact me</a></li>
     </ul>
 
@@ -68,6 +73,7 @@
       <li><a href="#about" onclick="closeMenu()">About Me</a></li>
       <li><a href="#services" onclick="closeMenu()">Services</a></li>
       <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+      <!-- TODO: Change to github -->
       <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
     </ul>
   </nav>
@@ -81,12 +87,12 @@
 
     <img src="images/profile-img.png" alt="Profile Image" class="rounded-full w-32">
 
-    <h3 class="flex items-center gap-2 text-xl md:text-2xl mt-1">Hi! I'm Piyush <img src="images/hand-icon.png"
+    <h3 class="flex items-center gap-2 text-xl md:text-2xl mt-1 font-Ovo">Hi! I'm Piyush <img src="images/hand-icon.png"
         alt="Hand Wave Icon" class="w-6"></h3>
 
     <h1 class="text-3xl sm:text-6xl lg:text-[66px]">full-stack web developer based in India.</h1>
 
-    <p class="max-w-2xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et consequatur maxime
+    <p class="max-w-2xl mx-auto font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et consequatur maxime
       quibusdam porro nemo
       inventore ex? Odio possimus, fugiat, qui culpa magnam praesentium ea accusantium laborum reiciendis alias officia!
     </p>
@@ -108,9 +114,9 @@
 
   <!-- About Me Section -->
 
-  <div class="w-full px-[12%] py-10 scroll-mt-10" id="about">
+  <div class="w-full px-[12%] py-10 scroll-mt-12" id="about">
     <h4 class="text-center mb-2 text-lg">Introduction</h4>
-    <h2 class="text-center text-5xl">About me</h2>
+    <h2 class="text-center text-5xl font-Ovo">About me</h2>
 
     <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
       <div class="max-w-max mx-auto relative">
@@ -120,7 +126,7 @@
         <div
           class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
 
-          <img src="images/circular-text.png" alt="Circular text" class="w-full">
+          <img src="images/circular-text.png" alt="Circular text" class="w-full animate-spin_slow">
 
           <img src="images/dev-icon.png" alt="Dev Icon"
             class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -134,7 +140,7 @@
           fugiat quos tempora voluptates!</p>
 
 
-        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+        <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
           <li
             class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-300 hover:shadow-[4px_4px_0_#000]">
 
@@ -206,16 +212,16 @@
   <!-- Services Section -->
 
 
-  <div id="services" class="w-full px-[12%] py-10 scroll-mt-10">
+  <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
     <h4 class="text-center mb-2 text-lg">What i offer</h4>
 
-    <h2 class="text-center text-5xl">My Services</h2>
+    <h2 class="text-center text-5xl font-Ovo">My Services</h2>
 
     <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
       facilis repellendus, delectus at atque neque voluptatum quod quasi dicta amet nesciunt tenetur aliquid perferendis
       hic debitis magnam non saepe consequuntur!</p>
 
-    <div class="grid grid-cols-4 gap-6 my-10">
+    <div class="grid sm:grid-cols-auto lg:grid-cols-4 gap-6 my-10">
 
       <!-- Web Design cart -->
 
@@ -278,16 +284,17 @@
   <!-- My Work Section -->
 
 
-  <div id="work" class="w-full px-[12%] py-10 scroll-mt-10">
+  <div id="work" class="w-full px-[12%] py-10 scroll-mt-14">
     <h4 class="text-center mb-2 text-lg">My portfolio</h4>
 
-    <h2 class="text-center text-5xl">My latest work</h2>
+    <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
 
     <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
       facilis repellendus, delectus at atque neque voluptatum quod quasi dicta amet nesciunt tenetur aliquid perferendis
       hic debitis magnam non saepe consequuntur!</p>
 
-    <div class="grid grid-cols-4 my-10 gap-5">
+
+    <div class="grid sm:grid-cols-auto lg:grid-cols-4 my-10 gap-5">
 
 
       <!-- Work 1 -->
@@ -387,10 +394,10 @@
 
 
   <div id="contact"
-    class="w-full px-[12%] py-10 scroll-mt-10 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+    class="w-full px-[12%] py-10 scroll-mt-16 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
     <h4 class="text-center mb-2 text-lg">Connect with me</h4>
 
-    <h2 class="text-center text-5xl">Get in touch</h2>
+    <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
 
     <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
       facilis repellendus, delectus at atque neque voluptatum quod quasi dicta amet nesciunt tenetur aliquid perferendis
@@ -400,7 +407,7 @@
     <!-- form for query -->
 
     <form action="" class="max-w-2xl mx-auto">
-      <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+      <div class="grid sm:grid-cols-auto gap-6 mt-10 mb-8">
         <input type="text" name="" id="" placeholder="Enter your name"
           class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
 
