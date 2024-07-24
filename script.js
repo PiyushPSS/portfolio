@@ -27,6 +27,25 @@ window.addEventListener('scroll', () => {
 })
 
 
+function darkMode() {
+  Toastify({
+    text: "This feature is under development.",
+    duration: 5000,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    // Prevents dismissing of toast on hover
+    style: {
+      background: "black",
+    },
+    offset: {
+      y: 25 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+    },
+    onClick: function () { } // Callback after click
+  }).showToast();
+}
+
+
 //Tailwind Configuration
 
 tailwind.config = {

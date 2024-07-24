@@ -22,6 +22,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body class="overflow-x-hidden font-Outfit">
@@ -43,16 +45,19 @@
       <li><a href="#about">About Me</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#work">My Work</a></li>
-      <!-- TODO: Change to github -->
       <li><a href="#contact">Contact me</a></li>
     </ul>
 
     <div class="flex items-center gap-4">
-      <button><img src="images/moon_icon.png" alt="Dark Mode Icon" class="w-6"></button>
 
-      <a href="#contact"
-        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <img
-          src="images/arrow-icon.png" alt="" class="w-3"></a>
+
+      <!-- TODO: UNDER DEVELOPMENT FEATURE -->
+
+      <button><img src="images/moon_icon.png" alt="Dark Mode Icon" class="w-6" onclick="darkMode()"></button>
+
+      <a href="https://github.com/PiyushPSS/Portfolio"
+        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+        target="_blank">Github<img src="images/arrow-icon.png" alt="" class="w-3"></a>
 
 
       <button class="block md:hidden ml-3" onclick="openMenu()">
@@ -73,7 +78,6 @@
       <li><a href="#about" onclick="closeMenu()">About Me</a></li>
       <li><a href="#services" onclick="closeMenu()">Services</a></li>
       <li><a href="#work" onclick="closeMenu()">My Work</a></li>
-      <!-- TODO: Change to github -->
       <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
     </ul>
   </nav>
@@ -92,7 +96,8 @@
 
     <h1 class="text-3xl sm:text-6xl lg:text-[66px]">full-stack web developer based in India.</h1>
 
-    <p class="max-w-2xl mx-auto font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et consequatur maxime
+    <p class="max-w-2xl mx-auto font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et
+      consequatur maxime
       quibusdam porro nemo
       inventore ex? Odio possimus, fugiat, qui culpa magnam praesentium ea accusantium laborum reiciendis alias officia!
     </p>
@@ -406,23 +411,27 @@
 
     <!-- form for query -->
 
-    <form action="" class="max-w-2xl mx-auto">
+    <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+      <input type="hidden" name="access_key" value="10aa780c-4d25-46a6-bc1e-551aa58b9c13">
+
       <div class="grid sm:grid-cols-auto gap-6 mt-10 mb-8">
-        <input type="text" name="" id="" placeholder="Enter your name"
-          class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+        <input type="text" name="name" id="" placeholder="Enter your name"
+          class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
 
 
-        <input type="email" name="" id="" placeholder="Enter your email"
-          class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+        <input type="email" name="email" id="" placeholder="Enter your email"
+          class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
       </div>
 
 
       <textarea rows="6" placeholder="Enter your message"
-        class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
-
+        class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required
+        name="message"></textarea>
 
       <button
-        class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">
+        class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+        id>
         Submit now <img src="images/right-arrow-white.png" alt="wubmit button" class="w-4">
       </button>
     </form>
@@ -445,6 +454,7 @@
     </div>
 
     <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+      <!-- TODO: CHANGE COPYRIGHT BUTTON -->
       <p>c 2024 Piyush. All rights reserved.</p>
       <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
         <!-- TODO: Socials -->
@@ -459,6 +469,7 @@
 
   <!-- Script added -->
   <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 
