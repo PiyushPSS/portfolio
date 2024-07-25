@@ -32,16 +32,14 @@ function darkMode() {
     text: "This feature is under development.",
     duration: 5000,
     close: true,
-    gravity: "bottom", // `top` or `bottom`
-    position: "center", // `left`, `center` or `right`
-    // Prevents dismissing of toast on hover
+    gravity: "bottom",
+    position: "center",
     style: {
       background: "black",
     },
     offset: {
-      y: 25 // vertical axis - can be a number or a string indicating unity. eg: '2em'
-    },
-    onClick: function () { } // Callback after click
+      y: 20
+    }
   }).showToast();
 }
 

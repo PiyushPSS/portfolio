@@ -1,0 +1,7 @@
+#navElement {
+    transition: transform 500ms ease-in-out;
+}
+
+#navElement:hover {
+    transform: scale(1.060);
+}

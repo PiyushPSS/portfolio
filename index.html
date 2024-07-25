@@ -24,6 +24,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      cursor: url('images/pointer.png'), auto;
+    }
+  </style>
+
 </head>
 
 <body class="overflow-x-hidden font-Outfit">
@@ -34,18 +43,19 @@
 
   <!-- Nav Bar Section -->
 
+
   <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
-    <img src="images/header-bg-color.png" alt="Header Background" class="w-full ">
+    <img src="images/header-bg-color.png" alt="Header Background" class="w-full pointer-events-none">
   </div>
 
   <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
     <img src="images/logo.png" alt="Piyush Logo" class="w-28 cursor-pointer mr-14">
     <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#work">My Work</a></li>
-      <li><a href="#contact">Contact me</a></li>
+      <li id="navElement"><a href="#home">Home</a></li>
+      <li id="navElement"><a href="#about">About Me</a></li>
+      <li id="navElement"><a href="#services">Services</a></li>
+      <li id="navElement"><a href="#work">My Work</a></li>
+      <li id="navElement"><a href="#contact">Contact me</a></li>
     </ul>
 
     <div class="flex items-center gap-4">
@@ -56,7 +66,7 @@
       <button><img src="images/moon_icon.png" alt="Dark Mode Icon" class="w-6" onclick="darkMode()"></button>
 
       <a href="https://github.com/PiyushPSS/Portfolio"
-        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 hover:bg-[#fcf4ff] duration-500"
         target="_blank">Github<img src="images/arrow-icon.png" alt="" class="w-3"></a>
 
 
@@ -89,20 +99,19 @@
 
   <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4" id="home">
 
-    <img src="images/profile-img.png" alt="Profile Image" class="rounded-full w-32">
+    <img src="images/profile_img.JPG" alt="Profile Image" class="rounded-full w-32 pointer-events-none">
 
     <h3 class="flex items-center gap-2 text-xl md:text-2xl mt-1 font-Ovo">Hi! I'm Piyush <img src="images/hand-icon.png"
         alt="Hand Wave Icon" class="w-6"></h3>
 
     <h1 class="text-3xl sm:text-6xl lg:text-[66px]">full-stack web developer based in India.</h1>
 
-    <p class="max-w-2xl mx-auto font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat et
-      consequatur maxime
-      quibusdam porro nemo
-      inventore ex? Odio possimus, fugiat, qui culpa magnam praesentium ea accusantium laborum reiciendis alias officia!
+    <p class="max-w-2xl mx-auto font-light">When I'm not buried in DSA, you can find me working with the <b>MERN
+        stack</b> or designing prototypes using <b>Figma</b>.
+    </p>
     </p>
 
-    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+    <div class="flex flex-col sm:flex-row items-center gap-4">
       <a href="#contact"
         class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">contact
         me <img src="images/right-arrow-white.png" alt="right arrow" class="w-4"></a>
@@ -140,9 +149,10 @@
 
       </div>
       <div class="flex-1">
-        <p class="mb-10 max-w-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, repellat
-          voluptas odio praesentium nisi velit nesciunt tenetur accusamus libero atque, amet ipsum natus cum fugit
-          fugiat quos tempora voluptates!</p>
+        <p class="mb-10 max-w-2xl">Hey, my name is <b>Piyush Pratap Singh</b> and I am from <b>Lucknow, Uttar Pradesh,
+            India.</b> I am currently pursuing <b>Masters of Computer Applications (MCA)</b> from <b>KIET,
+            Ghaziabad.</b> I believe that I am a smart, and solution oriented person. My hobbies are: <b>DSA, reading
+            books, building websites and watching football.</b> It's very nice to meet you. 😁</p>
 
 
         <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
