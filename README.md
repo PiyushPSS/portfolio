@@ -2,6 +2,11 @@
 
 Welcome to my portfolio repository! This project showcases my skills and projects as a full-stack web developer. Below you will find an overview of the project, installation instructions, and details about the technologies used.
 
+## Website Video Demo:
+
+![Piyushs Portfolio - Google Chrome 2024-07-27 13-49-40](https://github.com/user-attachments/assets/dd4c68a4-41e3-4c65-9d34-b0ab1effc01a)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
