@@ -10,15 +10,6 @@
 
   <script src="tailwind.config.js"></script>
 
-  <style type="text/tailwindcss">
-    @layer utilities {
-          .content-auto {
-            content-visibility: auto;
-          }
-        }
-  </style>
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
@@ -27,6 +18,7 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="main.css">
   <style>
     body {
       cursor: url('images/pointer.png'), auto;
@@ -53,8 +45,8 @@
     <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
       <li id="navElement"><a href="#home">Home</a></li>
       <li id="navElement"><a href="#about">About Me</a></li>
-      <li id="navElement" class="comingSoon"><a href="#services">Services</a></li>
-      <li id="navElement" class="comingSoon"><a href="#work">My Work</a></li>
+      <li id="navElement"><a href="#myresume">My Resume</a></li>
+      <!-- <li id="navElement"><a href="#work">My Work</a></li> -->
       <li id="navElement"><a href="#contact">Contact me</a></li>
     </ul>
 
@@ -86,8 +78,8 @@
 
       <li><a href="#home" onclick="closeMenu()">Home</a></li>
       <li><a href="#about" onclick="closeMenu()">About Me</a></li>
-      <li><a href="#services" onclick="closeMenu()" class="comingSoon">Services</a></li>
-      <li><a href="#work" onclick="closeMenu()" class="comingSoon">My Work</a></li>
+      <li><a href="#myresume" onclick="closeMenu()">My Resume</a></li>
+      <!-- <li><a href="#work" onclick="closeMenu()">My Work</a></li> -->
       <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
     </ul>
   </nav>
@@ -224,83 +216,110 @@
   </div>
 
 
- 
-  <!-- Contact Section -->
-
-
-  <div id="contact"
-    class="w-full px-[12%] py-10 scroll-mt-16 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
-    <h4 class="text-center mb-2 text-lg">Connect with me</h4>
-
-    <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
-
-    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Feel free to reach out to me if you have any questions, inquiries, or if you would like to collaborate on a project. I am always open to new opportunities and connections. You can contact me by filling out the form below or by using the provided email address. I look forward to hearing from you!</p>
-
-
-    <!-- form for query -->
-
-    <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-
-      <input type="hidden" name="access_key" value="10aa780c-4d25-46a6-bc1e-551aa58b9c13">
-
-      <div class="grid sm:grid-cols-auto gap-6 mt-10 mb-8">
-        <input type="text" name="name" id="" placeholder="Enter your name"
-          class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
-
-
-        <input type="email" name="email" id="" placeholder="Enter your email"
-          class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
-      </div>
-
-
-      <textarea rows="6" placeholder="Enter your message"
-        class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required
-        name="message"></textarea>
-
-      <button
-        class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
-        id>
-        Submit now <img src="images/right-arrow-white.png" alt="wubmit button" class="w-4">
-      </button>
-    </form>
-  </div>
-
-
   <!-- _________________________________________________________________ -->
 
-  <!-- Footer section  -->
+
+  <!-- Resume Section -->
 
 
-  <div class="mt-20">
+  <div id="myresume" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg">Get to know more about me</h4>
 
-    <div class="text-center">
-      <img src="images/logo.png" alt="Logo" class="w-36 mx-auto mb-2">
-      <div class="w-max flex items-center gap-2 mx-auto">
-        <img src="images/mail_icon.png" alt="email icon" class="w-6">
-        piyushforbusiness@gmail.com
+    <h2 class="text-center text-5xl font-Ovo">My Resume</h2>
+
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Below is a snapshot of my resume where you will see that I am
+      well equipped with the relevent technologies and in right position to help you move your company forward. 👇</p>
+
+
+    <div>
+      <p class="text-center">This resume was updated on: <b>27 July, 2024</b></p><br><br>
+      <img src="images/resume_image.jpg" class="pointer-events-none" alt="Resume">
+    </div>
+
+
+    <!-- My work section here.. -->
+
+    <!-- _________________________________________________________________ -->
+
+
+    <!-- Contact Section -->
+
+
+    <div id="contact"
+      class="w-full px-[12%] py-10 scroll-mt-16 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+      <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+
+      <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Feel free to reach out to me if you have any questions,
+        inquiries, or if you would like to collaborate on a project. I am always open to new opportunities and
+        connections. You can contact me by filling out the form below or by using the provided email address. I look
+        forward to hearing from you!</p>
+
+
+      <!-- form for query -->
+
+      <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+        <input type="hidden" name="access_key" value="10aa780c-4d25-46a6-bc1e-551aa58b9c13">
+
+        <div class="grid sm:grid-cols-auto gap-6 mt-10 mb-8">
+          <input type="text" name="name" id="" placeholder="Enter your name"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
+
+
+          <input type="email" name="email" id="" placeholder="Enter your email"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
+        </div>
+
+
+        <textarea rows="6" placeholder="Enter your message"
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required
+          name="message"></textarea>
+
+        <button
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+          id>
+          Submit now <img src="images/right-arrow-white.png" alt="wubmit button" class="w-4">
+        </button>
+      </form>
+    </div>
+
+
+    <!-- _________________________________________________________________ -->
+
+    <!-- Footer section  -->
+
+
+    <div class="mt-20">
+
+      <div class="text-center">
+        <img src="images/logo.png" alt="Logo" class="w-36 mx-auto mb-2">
+        <div class="w-max flex items-center gap-2 mx-auto">
+          <img src="images/mail_icon.png" alt="email icon" class="w-6">
+          piyushforbusiness@gmail.com
+        </div>
+      </div>
+
+      <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+        <p>© 2024 Piyush. All rights reserved.</p>
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+          <li id="socialLinks" class="hover:underline"><a href="https://github.com/PiyushPSS">Github</a></li>
+          <li id="socialLinks" class="hover:underline"><a href="https://www.linkedin.com/in/piyushps2002/">LinkedIn</a>
+          </li>
+          <li id="socialLinks" class="hover:underline"><a
+              href="https://www.naukri.com/code360/profile/itsokaypiyush ">Coding Ninjas</a></li>
+          <li id="socialLinks" class="hover:underline"><a
+              href="https://www.hackerrank.com/profile/PiyushPS2002">HackerRank</a></li>
+          <li id="socialLinks" class="hover:underline"><a href="https://leetcode.com/u/itsokaypiyush/">Leetcode</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-      <!-- TODO: CHANGE COPYRIGHT BUTTON -->
-      <p>c 2024 Piyush. All rights reserved.</p>
-      <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-        <li id="socialLinks" class="hover:underline"><a href="https://github.com/PiyushPSS">Github</a></li>
-        <li id="socialLinks" class="hover:underline"><a href="https://www.linkedin.com/in/piyushps2002/">LinkedIn</a>
-        </li>
-        <li id="socialLinks" class="hover:underline"><a
-            href="https://www.naukri.com/code360/profile/itsokaypiyush ">Coding Ninjas</a></li>
-        <li id="socialLinks" class="hover:underline"><a
-            href="https://www.hackerrank.com/profile/PiyushPS2002">HackerRank</a></li>
-        <li id="socialLinks" class="hover:underline"><a href="https://leetcode.com/u/itsokaypiyush/">Leetcode</a></li>
-      </ul>
-    </div>
-  </div>
 
-
-  <!-- Script added -->
-  <script src="script.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Script added -->
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 
