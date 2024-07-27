@@ -4,7 +4,7 @@ Welcome to my portfolio repository! This project showcases my skills and project
 
 ## Website Video Demo:
 
-![Piyushs Portfolio - Google Chrome 2024-07-27 13-49-40](https://github.com/user-attachments/assets/dd4c68a4-41e3-4c65-9d34-b0ab1effc01a)
+https://github.com/user-attachments/assets/66bedddb-208b-480d-9148-ec052f9ab307
 
 
 ## Table of Contents
