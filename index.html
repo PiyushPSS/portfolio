@@ -53,8 +53,8 @@
     <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
       <li id="navElement"><a href="#home">Home</a></li>
       <li id="navElement"><a href="#about">About Me</a></li>
-      <li id="navElement"><a href="#services">Services</a></li>
-      <li id="navElement"><a href="#work">My Work</a></li>
+      <li id="navElement" class="comingSoon"><a href="#services">Services</a></li>
+      <li id="navElement" class="comingSoon"><a href="#work">My Work</a></li>
       <li id="navElement"><a href="#contact">Contact me</a></li>
     </ul>
 
@@ -86,8 +86,8 @@
 
       <li><a href="#home" onclick="closeMenu()">Home</a></li>
       <li><a href="#about" onclick="closeMenu()">About Me</a></li>
-      <li><a href="#services" onclick="closeMenu()">Services</a></li>
-      <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+      <li><a href="#services" onclick="closeMenu()" class="comingSoon">Services</a></li>
+      <li><a href="#work" onclick="closeMenu()" class="comingSoon">My Work</a></li>
       <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
     </ul>
   </nav>
@@ -134,16 +134,16 @@
 
     <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
       <div class="max-w-max mx-auto relative">
-        <img src="images/user-image.png" alt="User Image" class="w-64 sm:w-80 rounded-3xl max-w-none">
+        <img src="images/profile_img_big.jpg" alt="Profile Image Big" class="w-64 sm:w-80 rounded-3xl max-w-none">
 
 
         <div
           class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
 
-          <img src="images/circular-text.png" alt="Circular text" class="w-full animate-spin_slow">
+          <img src="images/circular-text.png" alt="Circular text" class="w-full animate-spin_slow pointer-events-none">
 
           <img src="images/dev-icon.png" alt="Dev Icon"
-            class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
 
         </div>
 
@@ -161,7 +161,8 @@
 
             <img src="images/code-icon.png" alt="Code Icon" class="w-7 mt-3">
             <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
-            <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Node Js, Express Js, Mongo DB</p>
+            <p class="text-gray-600 text-sm">JavaScript, NodeJS, Java, MongoDB, ExpressJS, Python, Git, ReactJS, <u>read
+                more...</u></p>
           </li>
 
 
@@ -170,7 +171,8 @@
 
             <img src="images/edu-icon.png" alt="Education Icon" class="w-7 mt-3">
             <h3 class="my-4 font-semibold text-gray-700">Education</h3>
-            <p class="text-gray-600 text-sm">MCA from KIET</p>
+            <p class="text-gray-600 text-sm"><b>2023-2025:</b> MCA from Kiet, Ghaziabad. <br><b>2020-2023:</b> BCA from
+              LU. <u>read more...</u></p>
           </li>
 
 
@@ -179,7 +181,8 @@
 
             <img src="images/project-icon.png" alt="Project Icon" class="w-7 mt-3">
             <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
-            <p class="text-gray-600 text-sm">Built more than 5 projects</p>
+            <p class="text-gray-600 text-sm">Quizlet, Hoodie, Project Jugaad, BuyToday, ImagineAI, MeditateNow <u>read
+                more...</u></p>
           </li>
         </ul>
 
@@ -221,190 +224,7 @@
   </div>
 
 
-  <!-- _________________________________________________________________ -->
-
-
-  <!-- Services Section -->
-
-
-  <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-    <h4 class="text-center mb-2 text-lg">What i offer</h4>
-
-    <h2 class="text-center text-5xl font-Ovo">My Services</h2>
-
-    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-      facilis repellendus, delectus at atque neque voluptatum quod quasi dicta amet nesciunt tenetur aliquid perferendis
-      hic debitis magnam non saepe consequuntur!</p>
-
-    <div class="grid sm:grid-cols-auto lg:grid-cols-4 gap-6 my-10">
-
-      <!-- Web Design cart -->
-
-      <div
-        class="border border-gray-400 rounded-lg px-8 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-        <img src="images/web-icon.png" alt="Web Icon" class="w-10">
-        <h3 class="text-lg my-4 text-gray-700"><strong>Web Design</strong></h3>
-        <p class="text-sm text-gray-600 leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          nesciunt.</p>
-        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow.png"
-            alt="read more" class="w-4"></a>
-      </div>
-
-
-      <!-- Mobile App cart -->
-
-      <div
-        class="border border-gray-400 rounded-lg px-8 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-        <img src="images/mobile-icon.png" alt="Mobile Icon" class="w-10">
-        <h3 class="text-lg my-4 text-gray-700"><strong>Web Design</strong></h3>
-        <p class="text-sm text-gray-600 leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          nesciunt.</p>
-        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow.png"
-            alt="read more" class="w-4"></a>
-      </div>
-
-
-      <!-- UI/UX Design cart -->
-
-      <div
-        class="border border-gray-400 rounded-lg px-8 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-        <img src="images/ui-icon.png" alt="UI Icon" class="w-10">
-        <h3 class="text-lg my-4 text-gray-700"><strong>Web Design</strong></h3>
-        <p class="text-sm text-gray-600 leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          nesciunt.</p>
-        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow.png"
-            alt="read more" class="w-4"></a>
-      </div>
-
-
-      <!-- Graphics cart -->
-
-      <div
-        class="border border-gray-400 rounded-lg px-8 py-8 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-        <img src="images/mobile-icon.png" alt="Graphics Icon" class="w-10">
-        <h3 class="text-lg my-4 text-gray-700"><strong>Graphics Design</strong></h3>
-        <p class="text-sm text-gray-600 leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          nesciunt.</p>
-        <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow.png"
-            alt="read more" class="w-4"></a>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- _________________________________________________________________ -->
-
-
-  <!-- My Work Section -->
-
-
-  <div id="work" class="w-full px-[12%] py-10 scroll-mt-14">
-    <h4 class="text-center mb-2 text-lg">My portfolio</h4>
-
-    <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
-
-    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-      facilis repellendus, delectus at atque neque voluptatum quod quasi dicta amet nesciunt tenetur aliquid perferendis
-      hic debitis magnam non saepe consequuntur!</p>
-
-
-    <div class="grid sm:grid-cols-auto lg:grid-cols-4 my-10 gap-5">
-
-
-      <!-- Work 1 -->
-
-      <div
-        class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-
-        <div
-          class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-
-          <div>
-            <h2 class="font-semibold">Frontend Project</h2>
-            <p class="text-sm text-gray-700">Web Design</p>
-          </div>
-
-          <div
-            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <img src="images/send-icon.png" alt="send icon" class="w-5">
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Work 2 -->
-
-      <div
-        class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-
-        <div
-          class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-
-          <div>
-            <h2 class="font-semibold">Frontend Project</h2>
-            <p class="text-sm text-gray-700">Web Design</p>
-          </div>
-
-          <div
-            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <img src="images/send-icon.png" alt="send icon" class="w-5">
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Work 3 -->
-
-      <div
-        class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-
-        <div
-          class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-
-          <div>
-            <h2 class="font-semibold">Frontend Project</h2>
-            <p class="text-sm text-gray-700">Web Design</p>
-          </div>
-
-          <div
-            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <img src="images/send-icon.png" alt="send icon" class="w-5">
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Work 4 -->
-
-      <div
-        class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-
-        <div
-          class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-
-          <div>
-            <h2 class="font-semibold">Frontend Project</h2>
-            <p class="text-sm text-gray-700">Web Design</p>
-          </div>
-
-          <div
-            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <img src="images/send-icon.png" alt="send icon" class="w-5">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a href="#"
-      class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto mt-4 mb-20 hover:bg-[#fcf4ff] duration-500">Show
-      more <img src="images/right-arrow-bold.png" alt="arrow icon" class="w-4"></a>
-  </div>
-
-
-  <!-- _________________________________________________________________ -->
-
-
+ 
   <!-- Contact Section -->
 
 
@@ -414,9 +234,7 @@
 
     <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
 
-    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-      facilis repellendus, delectus at atque neque voluptatum quod quasi dicta amet nesciunt tenetur aliquid perferendis
-      hic debitis magnam non saepe consequuntur!</p>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Feel free to reach out to me if you have any questions, inquiries, or if you would like to collaborate on a project. I am always open to new opportunities and connections. You can contact me by filling out the form below or by using the provided email address. I look forward to hearing from you!</p>
 
 
     <!-- form for query -->
@@ -467,11 +285,14 @@
       <!-- TODO: CHANGE COPYRIGHT BUTTON -->
       <p>c 2024 Piyush. All rights reserved.</p>
       <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-        <!-- TODO: Socials -->
-        <li><a href="https:">Instagram</a></li>
-        <li><a href="https:">Github</a></li>
-        <li><a href="https:">LinkedIn</a></li>
-        <li><a href="https:">Hackerrank</a></li>
+        <li id="socialLinks" class="hover:underline"><a href="https://github.com/PiyushPSS">Github</a></li>
+        <li id="socialLinks" class="hover:underline"><a href="https://www.linkedin.com/in/piyushps2002/">LinkedIn</a>
+        </li>
+        <li id="socialLinks" class="hover:underline"><a
+            href="https://www.naukri.com/code360/profile/itsokaypiyush ">Coding Ninjas</a></li>
+        <li id="socialLinks" class="hover:underline"><a
+            href="https://www.hackerrank.com/profile/PiyushPS2002">HackerRank</a></li>
+        <li id="socialLinks" class="hover:underline"><a href="https://leetcode.com/u/itsokaypiyush/">Leetcode</a></li>
       </ul>
     </div>
   </div>

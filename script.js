@@ -44,6 +44,25 @@ function darkMode() {
 }
 
 
+document.querySelectorAll('.comingSoon').forEach(item => {
+  item.addEventListener('click', event => {
+    Toastify({
+      text: "This feature is under development.",
+      duration: 5000,
+      close: true,
+      gravity: "bottom",
+      position: "center",
+      style: {
+        background: "black",
+      },
+      offset: {
+        y: 20
+      }
+    }).showToast();
+  })
+});
+
+
 //Tailwind Configuration
 
 tailwind.config = {
